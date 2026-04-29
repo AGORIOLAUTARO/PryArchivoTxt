@@ -33,5 +33,17 @@ namespace PryArchivoTxt
             frmListadoClientes frm = new frmListadoClientes();
             frm.ShowDialog();
         }
+
+        private void listadoDeClientesDeudoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDeudores frm = new frmDeudores();
+            frm.ShowDialog();
+        }
+
+        private void acercaDelDesarrolladorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAcercaDe frm = new frmAcercaDe();
+            frm.ShowDialog();
+        }
     }
 }

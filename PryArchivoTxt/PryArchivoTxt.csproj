@@ -53,11 +53,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcercaDe.Designer.cs">
+      <DependentUpon>frmAcercaDe.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCargarClientes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCargarClientes.Designer.cs">
       <DependentUpon>frmCargarClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeudores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeudores.Designer.cs">
+      <DependentUpon>frmDeudores.cs</DependentUpon>
     </Compile>
     <Compile Include="frmListadoClientes.cs">
       <SubType>Form</SubType>
@@ -70,8 +82,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAcercaDe.resx">
+      <DependentUpon>frmAcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCargarClientes.resx">
       <DependentUpon>frmCargarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeudores.resx">
+      <DependentUpon>frmDeudores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmListadoClientes.resx">
       <DependentUpon>frmListadoClientes.cs</DependentUpon>
@@ -84,6 +102,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -97,6 +116,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foto cv.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
