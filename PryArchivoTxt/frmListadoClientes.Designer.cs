@@ -29,18 +29,19 @@
         private void InitializeComponent()
         {
             this.gpbConsultaDatos = new System.Windows.Forms.GroupBox();
+            this.lblResultadoPromedioDeuda = new System.Windows.Forms.Label();
+            this.lblResultadoCantidadClientes = new System.Windows.Forms.Label();
+            this.lblResultadoTotalDeuda = new System.Windows.Forms.Label();
+            this.lblPromedioDeuda = new System.Windows.Forms.Label();
+            this.lblCantidadClientes = new System.Windows.Forms.Label();
+            this.lblTotalDeuda = new System.Windows.Forms.Label();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lblTotalDeuda = new System.Windows.Forms.Label();
-            this.lblCantidadClientes = new System.Windows.Forms.Label();
-            this.lblPromedioDeuda = new System.Windows.Forms.Label();
-            this.lblResultadoTotalDeuda = new System.Windows.Forms.Label();
-            this.lblResultadoCantidadClientes = new System.Windows.Forms.Label();
-            this.lblResultadoPromedioDeuda = new System.Windows.Forms.Label();
             this.btnListar = new System.Windows.Forms.Button();
+            this.btnReporte = new System.Windows.Forms.Button();
             this.gpbConsultaDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
@@ -60,6 +61,60 @@
             this.gpbConsultaDatos.TabIndex = 0;
             this.gpbConsultaDatos.TabStop = false;
             this.gpbConsultaDatos.Text = "Consulta de Datos";
+            // 
+            // lblResultadoPromedioDeuda
+            // 
+            this.lblResultadoPromedioDeuda.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblResultadoPromedioDeuda.Location = new System.Drawing.Point(328, 458);
+            this.lblResultadoPromedioDeuda.Name = "lblResultadoPromedioDeuda";
+            this.lblResultadoPromedioDeuda.Size = new System.Drawing.Size(100, 29);
+            this.lblResultadoPromedioDeuda.TabIndex = 6;
+            // 
+            // lblResultadoCantidadClientes
+            // 
+            this.lblResultadoCantidadClientes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblResultadoCantidadClientes.Location = new System.Drawing.Point(328, 411);
+            this.lblResultadoCantidadClientes.Name = "lblResultadoCantidadClientes";
+            this.lblResultadoCantidadClientes.Size = new System.Drawing.Size(100, 29);
+            this.lblResultadoCantidadClientes.TabIndex = 5;
+            // 
+            // lblResultadoTotalDeuda
+            // 
+            this.lblResultadoTotalDeuda.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblResultadoTotalDeuda.Location = new System.Drawing.Point(328, 356);
+            this.lblResultadoTotalDeuda.Name = "lblResultadoTotalDeuda";
+            this.lblResultadoTotalDeuda.Size = new System.Drawing.Size(100, 28);
+            this.lblResultadoTotalDeuda.TabIndex = 4;
+            // 
+            // lblPromedioDeuda
+            // 
+            this.lblPromedioDeuda.AutoSize = true;
+            this.lblPromedioDeuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPromedioDeuda.Location = new System.Drawing.Point(181, 469);
+            this.lblPromedioDeuda.Name = "lblPromedioDeuda";
+            this.lblPromedioDeuda.Size = new System.Drawing.Size(141, 18);
+            this.lblPromedioDeuda.TabIndex = 3;
+            this.lblPromedioDeuda.Text = "Promedio de deuda:";
+            // 
+            // lblCantidadClientes
+            // 
+            this.lblCantidadClientes.AutoSize = true;
+            this.lblCantidadClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidadClientes.Location = new System.Drawing.Point(178, 411);
+            this.lblCantidadClientes.Name = "lblCantidadClientes";
+            this.lblCantidadClientes.Size = new System.Drawing.Size(144, 18);
+            this.lblCantidadClientes.TabIndex = 2;
+            this.lblCantidadClientes.Text = "Cantidad de clientes:";
+            // 
+            // lblTotalDeuda
+            // 
+            this.lblTotalDeuda.AutoSize = true;
+            this.lblTotalDeuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalDeuda.Location = new System.Drawing.Point(197, 361);
+            this.lblTotalDeuda.Name = "lblTotalDeuda";
+            this.lblTotalDeuda.Size = new System.Drawing.Size(109, 18);
+            this.lblTotalDeuda.TabIndex = 1;
+            this.lblTotalDeuda.Text = "Total de deuda:";
             // 
             // dgvClientes
             // 
@@ -94,60 +149,6 @@
             this.Column4.HeaderText = "Deuda";
             this.Column4.Name = "Column4";
             // 
-            // lblTotalDeuda
-            // 
-            this.lblTotalDeuda.AutoSize = true;
-            this.lblTotalDeuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalDeuda.Location = new System.Drawing.Point(197, 361);
-            this.lblTotalDeuda.Name = "lblTotalDeuda";
-            this.lblTotalDeuda.Size = new System.Drawing.Size(109, 18);
-            this.lblTotalDeuda.TabIndex = 1;
-            this.lblTotalDeuda.Text = "Total de deuda:";
-            // 
-            // lblCantidadClientes
-            // 
-            this.lblCantidadClientes.AutoSize = true;
-            this.lblCantidadClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidadClientes.Location = new System.Drawing.Point(178, 411);
-            this.lblCantidadClientes.Name = "lblCantidadClientes";
-            this.lblCantidadClientes.Size = new System.Drawing.Size(144, 18);
-            this.lblCantidadClientes.TabIndex = 2;
-            this.lblCantidadClientes.Text = "Cantidad de clientes:";
-            // 
-            // lblPromedioDeuda
-            // 
-            this.lblPromedioDeuda.AutoSize = true;
-            this.lblPromedioDeuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPromedioDeuda.Location = new System.Drawing.Point(181, 469);
-            this.lblPromedioDeuda.Name = "lblPromedioDeuda";
-            this.lblPromedioDeuda.Size = new System.Drawing.Size(141, 18);
-            this.lblPromedioDeuda.TabIndex = 3;
-            this.lblPromedioDeuda.Text = "Promedio de deuda:";
-            // 
-            // lblResultadoTotalDeuda
-            // 
-            this.lblResultadoTotalDeuda.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblResultadoTotalDeuda.Location = new System.Drawing.Point(328, 356);
-            this.lblResultadoTotalDeuda.Name = "lblResultadoTotalDeuda";
-            this.lblResultadoTotalDeuda.Size = new System.Drawing.Size(100, 28);
-            this.lblResultadoTotalDeuda.TabIndex = 4;
-            // 
-            // lblResultadoCantidadClientes
-            // 
-            this.lblResultadoCantidadClientes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblResultadoCantidadClientes.Location = new System.Drawing.Point(328, 411);
-            this.lblResultadoCantidadClientes.Name = "lblResultadoCantidadClientes";
-            this.lblResultadoCantidadClientes.Size = new System.Drawing.Size(100, 29);
-            this.lblResultadoCantidadClientes.TabIndex = 5;
-            // 
-            // lblResultadoPromedioDeuda
-            // 
-            this.lblResultadoPromedioDeuda.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblResultadoPromedioDeuda.Location = new System.Drawing.Point(328, 458);
-            this.lblResultadoPromedioDeuda.Name = "lblResultadoPromedioDeuda";
-            this.lblResultadoPromedioDeuda.Size = new System.Drawing.Size(100, 29);
-            this.lblResultadoPromedioDeuda.TabIndex = 6;
-            // 
             // btnListar
             // 
             this.btnListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -158,11 +159,22 @@
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
             // 
+            // btnReporte
+            // 
+            this.btnReporte.Location = new System.Drawing.Point(93, 536);
+            this.btnReporte.Name = "btnReporte";
+            this.btnReporte.Size = new System.Drawing.Size(75, 23);
+            this.btnReporte.TabIndex = 2;
+            this.btnReporte.Text = "Reporte";
+            this.btnReporte.UseVisualStyleBackColor = true;
+            this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click);
+            // 
             // frmListadoClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(573, 580);
+            this.Controls.Add(this.btnReporte);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.gpbConsultaDatos);
             this.Name = "frmListadoClientes";
@@ -191,5 +203,6 @@
         private System.Windows.Forms.Label lblResultadoCantidadClientes;
         private System.Windows.Forms.Label lblResultadoTotalDeuda;
         private System.Windows.Forms.Button btnListar;
+        private System.Windows.Forms.Button btnReporte;
     }
 }

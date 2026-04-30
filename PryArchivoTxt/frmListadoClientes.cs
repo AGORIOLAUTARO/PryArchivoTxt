@@ -22,5 +22,11 @@ namespace PryArchivoTxt
             x.Listar(dgvClientes);
              
         }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            x.GenerarReporte();
+            MessageBox.Show("Reporte generado con exito");
+        }
     }
 }

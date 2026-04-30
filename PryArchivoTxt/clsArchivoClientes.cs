@@ -158,5 +158,55 @@ namespace PryArchivoTxt
                 return 0;
             }
         }
+        public void GenerarReporte ()
+        {
+            string DatosLeidos;
+            string[] VecDatos = new string[4];
+
+
+
+            StreamReader AD = new StreamReader(NombreArchivo);
+            DatosLeidos = AD.ReadLine();
+
+            Int32 cantidad = 0;
+            Decimal total = 0;
+            StreamWriter Reporte = new StreamWriter("Reporte.csv", false, Encoding.UTF8);
+
+            Reporte.WriteLine("Listado de clientes");
+            Reporte.WriteLine("");
+            Reporte.WriteLine("Codigo;Nombre;Limite;Deuda");
+
+
+            while (DatosLeidos != null)
+            {
+                VecDatos = DatosLeidos.Split(';');
+
+                Reporte.Write(VecDatos[0]);
+                Reporte.Write(";");
+                Reporte.Write(VecDatos[1]);
+                Reporte.Write(";");
+                Reporte.Write(VecDatos[3]);
+                Reporte.Write(";");
+                Reporte.WriteLine(VecDatos[2]);
+
+
+
+                DatosLeidos = AD.ReadLine();
+                cantidad++;
+                total = total + Convert.ToDecimal(VecDatos[2]);
+            }
+            AD.Close();
+            AD.Dispose();
+            Reporte.WriteLine("");    
+            Reporte.Write("Total de Deudas:;;");
+            Reporte.WriteLine (total);
+            Reporte.Write("Cantidad de Clientes:;;");
+            Reporte.WriteLine(cantidad);
+            Reporte.Write("Promedio de Deuda:;;");
+            Reporte.WriteLine(total/cantidad);
+
+            Reporte.Close();
+            Reporte.Dispose();
+        }
     }
 }
