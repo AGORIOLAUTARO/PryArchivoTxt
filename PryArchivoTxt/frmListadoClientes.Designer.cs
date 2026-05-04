@@ -42,12 +42,14 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnListar = new System.Windows.Forms.Button();
             this.btnReporte = new System.Windows.Forms.Button();
+            this.btnOrdenar = new System.Windows.Forms.Button();
             this.gpbConsultaDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
             // gpbConsultaDatos
             // 
+            this.gpbConsultaDatos.Controls.Add(this.btnOrdenar);
             this.gpbConsultaDatos.Controls.Add(this.lblResultadoPromedioDeuda);
             this.gpbConsultaDatos.Controls.Add(this.lblResultadoCantidadClientes);
             this.gpbConsultaDatos.Controls.Add(this.lblResultadoTotalDeuda);
@@ -161,13 +163,23 @@
             // 
             // btnReporte
             // 
-            this.btnReporte.Location = new System.Drawing.Point(93, 536);
+            this.btnReporte.Location = new System.Drawing.Point(59, 536);
             this.btnReporte.Name = "btnReporte";
             this.btnReporte.Size = new System.Drawing.Size(75, 23);
             this.btnReporte.TabIndex = 2;
             this.btnReporte.Text = "Reporte";
             this.btnReporte.UseVisualStyleBackColor = true;
             this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click);
+            // 
+            // btnOrdenar
+            // 
+            this.btnOrdenar.Location = new System.Drawing.Point(47, 469);
+            this.btnOrdenar.Name = "btnOrdenar";
+            this.btnOrdenar.Size = new System.Drawing.Size(75, 23);
+            this.btnOrdenar.TabIndex = 7;
+            this.btnOrdenar.Text = "Ordenar";
+            this.btnOrdenar.UseVisualStyleBackColor = true;
+            this.btnOrdenar.Click += new System.EventHandler(this.btnOrdenar_Click);
             // 
             // frmListadoClientes
             // 
@@ -204,5 +216,6 @@
         private System.Windows.Forms.Label lblResultadoTotalDeuda;
         private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.Button btnReporte;
+        private System.Windows.Forms.Button btnOrdenar;
     }
 }

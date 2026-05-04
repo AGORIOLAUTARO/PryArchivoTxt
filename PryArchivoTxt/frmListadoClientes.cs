@@ -20,6 +20,10 @@ namespace PryArchivoTxt
         private void frmListadoClientes_Load(object sender, EventArgs e)
         {
             x.Listar(dgvClientes);
+            lblResultadoTotalDeuda.Text = x.TotalDeuda().ToString();
+            lblResultadoCantidadClientes.Text= x.CantClientes().ToString();
+         
+            lblResultadoPromedioDeuda.Text= x.PromedioDeuda().ToString();
              
         }
 
@@ -27,6 +31,13 @@ namespace PryArchivoTxt
         {
             x.GenerarReporte();
             MessageBox.Show("Reporte generado con exito");
+        }
+
+        private void btnOrdenar_Click(object sender, EventArgs e)
+        {
+            x.OrdenarArchivo();
+            x.Listar(dgvClientes);
+            MessageBox.Show("Archivo Ordenado");
         }
     }
 }
