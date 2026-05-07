@@ -120,5 +120,8 @@
   <ItemGroup>
     <None Include="Resources\foto cv.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4k-large-for-desktop-wallpaper-preview.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
